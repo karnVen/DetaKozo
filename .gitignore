@@ -4,6 +4,9 @@
 *.o
 *.obj
 
+# Java Bytecode
+*.class
+
 # Precompiled Headers
 *.gch
 *.pch
