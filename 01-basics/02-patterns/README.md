@@ -48,7 +48,7 @@ Whenever you encounter ANY pattern problem, follow this 4-step framework:
 | **16** | [Alpha-Ramp Pattern](https://takeuforward.org/strivers-a2z-dsa-course/must-do-pattern-problems-solve-any-pattern-problems/#pattern-16) | Easy | ? Ready | [`Pattern16.java`](./Pattern16.java) |
 | **17** | [Alpha-Hill Pattern](https://takeuforward.org/strivers-a2z-dsa-course/must-do-pattern-problems-solve-any-pattern-problems/#pattern-17) | Hard | ? Ready | [`Pattern17.java`](./Pattern17.java) |
 | **18** | [Alpha-Triangle Pattern](https://takeuforward.org/strivers-a2z-dsa-course/must-do-pattern-problems-solve-any-pattern-problems/#pattern-18) | Medium | ? Ready | [`Pattern18.java`](./Pattern18.java) |
-| **19** | [Symmetric Void Pattern](https://takeuforward.org/strivers-a2z-dsa-course/must-do-pattern-problems-solve-any-pattern-problems/#pattern-19) | Hard | ? Not Started | ? |
+| **19** | [Symmetric Void Pattern](https://takeuforward.org/strivers-a2z-dsa-course/must-do-pattern-problems-solve-any-pattern-problems/#pattern-19) | Hard | ? Ready | [`Pattern19.java`](./Pattern19.java) |
 | **20** | [Symmetric Butterfly Pattern](https://takeuforward.org/strivers-a2z-dsa-course/must-do-pattern-problems-solve-any-pattern-problems/#pattern-20) | Hard | ? Not Started | ? |
 | **21** | [Hollow Rectangle Pattern](https://takeuforward.org/strivers-a2z-dsa-course/must-do-pattern-problems-solve-any-pattern-problems/#pattern-21) | Easy | ? Not Started | ? |
 | **22** | [The Number Pattern (Matrix Concentric)](https://takeuforward.org/strivers-a2z-dsa-course/must-do-pattern-problems-solve-any-pattern-problems/#pattern-22) | Hard | ? Not Started | ? |
@@ -59,8 +59,5 @@ Whenever you encounter ANY pattern problem, follow this 4-step framework:
 
 ```bash
 # Compile and run any individual pattern:
-javac Pattern01.java && java Pattern01
-
-# Or compile and run all 18 patterns together:
-javac Patterns_1_to_18.java && java Patterns_1_to_18
+javac Pattern19.java && java Pattern19
 ```
