@@ -1,106 +1,203 @@
-# ?? DetaKozo (?????) ? DSA Mastery with AI-bou
+<div align="center">
 
-> *"Mastering Data Structures & Algorithms with an AI companion (?? / AI-bou) ? understanding intuition first, deriving logic mathematically, and writing clean code."*
+# ⚡ DETAKOZO (データ構造)
+### *The Algorithmic Second Brain & Pattern Mastery Command Center*
+**Data Structures & Algorithms in Java • Striver A2Z DSA • TakeUForward**
 
-Welcome to **DetaKozo**! This repository is my personal DSA knowledge vault following the **[Striver's A2Z DSA Sheet](https://takeuforward.org/prep-hub/strivers-a2z-dsa-sheet)**, structured for deep, progressive learning.
+[![Obsidian Ready](https://img.shields.io/badge/Obsidian-Second_Brain_Ready-7C3AED?style=for-the-badge&logo=obsidian&logoColor=white)](https://obsidian.md)
+[![Language](https://img.shields.io/badge/Language-Java_21-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.oracle.com/java/)
+[![Curriculum](https://img.shields.io/badge/Curriculum-Striver's_A2Z_DSA-FF5722?style=for-the-badge&logo=codeforces&logoColor=white)](https://takeuforward.org/prep-hub/strivers-a2z-dsa-sheet)
+[![Progress](https://img.shields.io/badge/Patterns_Mastery-20%2F22_Completed-10B981?style=for-the-badge&logo=target&logoColor=white)](#-step-12-patterns-mastery-matrix)
+[![Method](https://img.shields.io/badge/Pedagogy-Alvar_Method-6366F1?style=for-the-badge)](#-the-ai-bou-engineering-philosophy)
 
----
-
-## ?? The AI-bou Learning Philosophy
-Instead of jumping directly to ready-made answers:
-1. **Decode the Geometry / Problem State**: Visualize the rows, columns, spaces, and values.
-2. **Find the Mathematical Link**: Derive relations between iteration index `i` and target elements `j`.
-3. **Pseudo-code & Logic Tracing**: Formulate the thought process in plain English before touching syntax.
-4. **Implementation & Complexity**: Code clean solutions and evaluate Time $O(\dots)$ and Space $O(\dots)$ complexity.
-5. **Continuous Vaulting**: Save code, explanations, and edge-case insights right into this repository.
-
----
-
-## ?? Table of Contents
-- [??? Striver A2Z Roadmap & Progress](#?-striver-a2z-roadmap--progress)
-- [?? Repository Structure](#-repository-structure)
-- [?? Setup & Compilation](#?-setup--compilation)
-- [?? Resources & References](#-resources--references)
+<p align="center">
+  <b>No rote memorization. Pure coordinate geometry and algorithmic derivation.</b><br>
+  <b>DetaKozo</b> is an engineering-grade DSA knowledge vault pairing with <b>AI-bou</b> (相棒 / Companion).<br>
+  Featuring mathematical coordinate models, standalone verified Java 21 runners, dual-perspective implementations, and Obsidian-linked notes.
+</p>
 
 ---
 
-## ??? Striver A2Z Roadmap & Progress
+[⚡ Master Mental Models](./00-DSA-Roadmap-and-Mental-Models.md) • [📐 Pattern Code Matrix](./01-basics/02-patterns/README.md) • [💻 Java Patterns Suite](./01-basics/02-patterns/) • [📖 TakeUForward Sheet](https://takeuforward.org/prep-hub/strivers-a2z-dsa-sheet)
 
-### ?? Step 1: Learn the Basics
-- [x] **1.1 Things to Know in Programming / Basics** (I/O, Conditionals, Data Types)
-- [x] **[1.2 Build-up Logical Thinking (Patterns 01 to 18)](./01-basics/02-patterns/README.md)** ? ? *In Progress (18/22 Complete)*
-- [ ] **1.3 Collections & STL Basics**
-- [ ] **1.4 Basic Maths** (Count Digits, Reverse, Palindrome, GCD, Armstrong, Divisors, Prime)
-- [ ] **1.5 Basic Recursion**
-- [ ] **1.6 Basic Hashing**
+---
 
-### ? Step 2: Learn Important Sorting Techniques
-- [ ] Selection, Bubble, Insertion Sort
+</div>
+
+## 📊 At a Glance (Vault Metrics)
+
+| Metric | Metric Details |
+| :--- | :--- |
+| 🎯 **Step 1.2 Patterns Solved** | **20 / 22 Completed (91%)** — Hard symmetry & void patterns unlocked |
+| 💻 **Language & Environment** | **Java 21 LTS** — Standalone classes with built-in `main` test runners |
+| 📐 **Visual Blueprints & Diagrams** | **Boxed ASCII coordinate geometry & mathematical invariant derivations** |
+| 🧠 **Learning Pedagogy** | **The Alvar Method** (Probe → Plan → Teach → Lock-in) |
+| 📓 **Second Brain Integration** | **Obsidian-Ready** with native LaTeX math (`$$2(N - i - 1)$$`) and graph links |
+| ⚖️ **Dual-Approach Implementations** | Both independent halves and single-loop symmetry solutions documented |
+
+---
+
+## 🗺️ Algorithmic Blueprints & Mental Models
+
+### 1. Matrix Coordinate Geometry & Invariant Mapping
+```
+┌────────────────────────────────────────────────────────────────────────┐
+│                        2D Matrix Coordinate Grid                       │
+│                      Row (i) ──▶ Inner Column Loops (j)                │
+├────────────────────────────────────────────────────────────────────────┤
+│  1. Outer Loop: Total Rows (i = 0 to N-1 or i = 1 to 2*N-1)            │
+│  2. Left Symbols:  f(i)   ──▶ Number of leading stars / characters     │
+│  3. Middle Spaces: g(i)   ──▶ Discrete space sequences (2*i, 2*(N-1-i))│
+│  4. Right Symbols: f(i)   ──▶ Mirrored trailing stars / characters     │
+│  5. Newline:       System.out.println() at the end of each row         │
+└────────────────────────────────────────────────────────────────────────┘
+```
+
+### 2. Symmetrical Butterfly Pattern Blueprint (`Pattern 20`)
+```
+Row (i)       Left Stars (j)          Spaces (s)          Right Stars (j)
+  1           *                  [  8 Spaces  ]                 *
+  2           **                 [  6 Spaces  ]                **
+  3           ***                [  4 Spaces  ]               ***
+  4           ****               [  2 Spaces  ]              ****
+  5           **********         [  0 Spaces  ]        **********   <── Center Axis (i = N)
+  6           ****               [  2 Spaces  ]              ****
+  7           ***                [  4 Spaces  ]               ***
+  8           **                 [  6 Spaces  ]                **
+  9           *                  [  8 Spaces  ]                 *
+             (stars = i)        (spaces = 2*N - 2)            (stars = i)
+             (if i > N ──▶ 2*N - i)                          (if i > N ──▶ 2*N - i)
+```
+
+---
+
+## 📚 Striver A2Z DSA Roadmap Tracker
+
+### 🟢 Step 1: Learn the Basics (In Progress)
+- [x] **1.1 Things to Know in Programming** (I/O, Conditionals, Data Types, Switch)
+- [x] **[1.2 Build-up Logical Thinking (Patterns 01 to 20)](./01-basics/02-patterns/README.md)** — *(20/22 Complete, 91%)*
+- [ ] **1.3 Java Collections Framework / STL Basics**
+- [ ] **1.4 Basic Maths** (Count Digits, Reverse Number, Palindrome, GCD/HCF, Armstrong, All Divisors, Prime Check)
+- [ ] **1.5 Basic Recursion** (1 to N, Backtracking, Functional Recursion, Fibonacci)
+- [ ] **1.6 Basic Hashing** (Frequency arrays, HashMap, High/Low Frequency elements)
+
+### ⚪ Step 2: Learn Important Sorting Techniques
+- [ ] Selection Sort, Bubble Sort, Insertion Sort
 - [ ] Merge Sort, Recursive Bubble & Insertion, Quick Sort
 
-### ? Step 3: Solve Problems on Arrays
-- [ ] Easy $\rightarrow$ Medium $\rightarrow$ Hard Array Problems
+### ⚪ Step 3: Solve Problems on Arrays
+- [ ] Easy $\rightarrow$ Medium $\rightarrow$ Hard Array Problems (Two Pointers, Kadane's, Dutch National Flag, Moore's Voting)
 
-### ? Step 4: Binary Search
-- [ ] 1D Arrays $\rightarrow$ Search Space $\rightarrow$ 2D Arrays
+### ⚪ Step 4: Binary Search
+- [ ] 1D Arrays $\rightarrow$ Search Space $\rightarrow$ 2D Arrays & Matrix Binary Search
 
-### ? Step 5: Strings (Basic & Medium)
-### ? Step 6: Learn LinkedList (Singly, Doubly, Medium, Hard)
-### ? Step 7: Recursion & Backtracking
-### ? Step 8: Bit Manipulation
-### ? Step 9: Stack and Queues
-### ? Step 10: Sliding Window & Two Pointers
-### ? Step 11: Heaps / Priority Queues
-### ? Step 12: Greedy Algorithms
-### ? Step 13: Binary Trees & BST
-### ? Step 14: Graphs
-### ? Step 15: Dynamic Programming
-### ? Step 16: Tries & Advanced Topics
+### ⚪ Step 5: Strings (Basic & Medium)
+### ⚪ Step 6: Learn LinkedList (Singly, Doubly, Medium, Hard)
+### ⚪ Step 7: Recursion & Backtracking
+### ⚪ Step 8: Bit Manipulation
+### ⚪ Step 9: Stack and Queues (Monotonic Stacks, LRU Cache)
+### ⚪ Step 10: Sliding Window & Two Pointers
+### ⚪ Step 11: Heaps / Priority Queues
+### ⚪ Step 12: Greedy Algorithms
+### ⚪ Step 13: Binary Trees & BST
+### ⚪ Step 14: Graphs (BFS, DFS, Dijkstra, DSU, Spanning Trees)
+### ⚪ Step 15: Dynamic Programming (1D, 2D, Grids, Subsequences, MCM)
+### ⚪ Step 16: Tries & Advanced Data Structures
 
 ---
 
-## ?? Repository Structure
+## 📐 Step 1.2: Patterns Mastery Matrix
+
+| # | Pattern Name | Difficulty | Status | Java File | Mental Model / Key Formula |
+|:---:|:---|:---:|:---:|:---|:---|
+| **01** | [Rectangular Star](./01-basics/02-patterns/Pattern01.java) | Easy | ✅ Ready | [`Pattern01.java`](./01-basics/02-patterns/Pattern01.java) | Uniform $N \times N$ matrix grid |
+| **02** | [Right-Angled Triangle](./01-basics/02-patterns/Pattern02.java) | Easy | ✅ Ready | [`Pattern02.java`](./01-basics/02-patterns/Pattern02.java) | Row $i$ has $i$ stars |
+| **03** | [Right-Angled Number Pyramid](./01-basics/02-patterns/Pattern03.java) | Easy | ✅ Ready | [`Pattern03.java`](./01-basics/02-patterns/Pattern03.java) | Print column index $j$ ($1 \dots i$) |
+| **04** | [Right-Angled Number Pyramid - II](./01-basics/02-patterns/Pattern04.java) | Easy | ✅ Ready | [`Pattern04.java`](./01-basics/02-patterns/Pattern04.java) | Print row index $i$ repeated $i$ times |
+| **05** | [Inverted Right Pyramid](./01-basics/02-patterns/Pattern05.java) | Easy | ✅ Ready | [`Pattern05.java`](./01-basics/02-patterns/Pattern05.java) | Stars decrease: $N - i + 1$ |
+| **06** | [Inverted Numbered Right Pyramid](./01-basics/02-patterns/Pattern06.java) | Easy | ✅ Ready | [`Pattern06.java`](./01-basics/02-patterns/Pattern06.java) | Numbers $1 \dots N - i + 1$ |
+| **07** | [Star Pyramid (Centered)](./01-basics/02-patterns/Pattern07.java) | Medium | ✅ Ready | [`Pattern07.java`](./01-basics/02-patterns/Pattern07.java) | Spaces: $N - i - 1$, Stars: $2i + 1$ |
+| **08** | [Inverted Star Pyramid](./01-basics/02-patterns/Pattern08.java) | Medium | ✅ Ready | [`Pattern08.java`](./01-basics/02-patterns/Pattern08.java) | Spaces: $i$, Stars: $2(N - i) - 1$ |
+| **09** | [Diamond Star Pattern](./01-basics/02-patterns/Pattern09.java) | Medium | ✅ Ready | [`Pattern09.java`](./01-basics/02-patterns/Pattern09.java) | Composite: Pattern 07 + Pattern 08 |
+| **10** | [Half Diamond Star](./01-basics/02-patterns/Pattern10.java) | Easy | ✅ Ready | [`Pattern10.java`](./01-basics/02-patterns/Pattern10.java) | Symmetric stars: $i \le N ? i : 2N - i$ |
+| **11** | [Binary Number Triangle (0/1)](./01-basics/02-patterns/Pattern11.java) | Medium | ✅ Ready | [`Pattern11.java`](./01-basics/02-patterns/Pattern11.java) | Parity check: $(i + j) \pmod 2$ |
+| **12** | [Number Crown Pattern](./01-basics/02-patterns/Pattern12.java) | Medium | ✅ Ready | [`Pattern12.java`](./01-basics/02-patterns/Pattern12.java) | Ascending numbers + $2(N - i)$ spaces + Descending |
+| **13** | [Increasing Number Triangle](./01-basics/02-patterns/Pattern13.java) | Easy | ✅ Ready | [`Pattern13.java`](./01-basics/02-patterns/Pattern13.java) | Floyd's triangle with continuous counter |
+| **14** | [Increasing Letter Triangle](./01-basics/02-patterns/Pattern14.java) | Easy | ✅ Ready | [`Pattern14.java`](./01-basics/02-patterns/Pattern14.java) | Characters $(char)('A' + j)$ |
+| **15** | [Reverse Letter Triangle](./01-basics/02-patterns/Pattern15.java) | Easy | ✅ Ready | [`Pattern15.java`](./01-basics/02-patterns/Pattern15.java) | Decreasing letters $(char)('A' + j)$ |
+| **16** | [Alpha-Ramp Pattern](./01-basics/02-patterns/Pattern16.java) | Easy | ✅ Ready | [`Pattern16.java`](./01-basics/02-patterns/Pattern16.java) | Constant character per row: $(char)('A' + i)$ |
+| **17** | [Alpha-Hill Pattern](./01-basics/02-patterns/Pattern17.java) | Hard | ✅ Ready | [`Pattern17.java`](./01-basics/02-patterns/Pattern17.java) | Palindromic character pyramid with midpoint inflection |
+| **18** | [Alpha-Triangle Pattern](./01-basics/02-patterns/Pattern18.java) | Medium | ✅ Ready | [`Pattern18.java`](./01-basics/02-patterns/Pattern18.java) | Reverse alphabet start from $(char)('A' + N - 1)$ |
+| **19** | [Symmetric Void Pattern](./01-basics/02-patterns/Pattern19.java) | Hard | ✅ Ready | [`Pattern19.java`](./01-basics/02-patterns/Pattern19.java) | Top: stars decrease, spaces grow. Bottom: inverted |
+| **20** | [Symmetric Butterfly Pattern](./01-basics/02-patterns/Pattern20.java) | Hard | ✅ Ready | [`Pattern20.java`](./01-basics/02-patterns/Pattern20.java) | **Dual Approaches**: Two halves + Single-loop symmetry |
+| **21** | Hollow Rectangle Pattern | Easy | ⏳ Next Up | *Upcoming* | Boundary condition: $i == 0 \lor i == N-1 \lor j == 0 \lor j == N-1$ |
+| **22** | Matrix Concentric Number Pattern | Hard | ⏳ Next Up | *Upcoming* | Distance to borders: $N - \min(top, bottom, left, right)$ |
+
+---
+
+## 🧠 The AI-bou Engineering Philosophy
+
+Instead of copying canned solutions, this repository enforces **The Alvar Method**:
+
+```
+      PROBE                     PLAN                     TEACH                    LOCK-IN
+┌──────────────────┐     ┌──────────────────┐     ┌──────────────────┐     ┌──────────────────┐
+│  Deconstruct the │ ──▶ │ Derive the math  │ ──▶ │ Articulate logic │ ──▶ │ Standalone code  │
+│  problem visual  │     │ row-to-col invariants  │ in plain English │     │ + git vaulting   │
+└──────────────────┘     └──────────────────┘     └──────────────────┘     └──────────────────┘
+```
+
+1. **Probe (Visual Anatomy):** Identify outer boundary rows, leading spaces, mirrored symmetry, and inflection lines.
+2. **Plan (Mathematical Derivations):** Express symbols as discrete functions of $i$ and $N$ (e.g., $2 \times (N - i)$).
+3. **Teach (Verbalize the Invariant):** Explain why the algorithm works step-by-step before touching Java syntax.
+4. **Lock-in (Clean Implementations):** Write robust, self-contained Java source files with runnable `main` verification runners.
+
+---
+
+## 📁 Repository Architecture
 
 ```plaintext
 01-DSA/
-??? .gitignore                      # Clean ignore rules (binaries, bytecode)
-??? README.md                       # Main roadmap and AI-bou tracker
-?
-??? 01-basics/
-?   ??? 02-patterns/                # ?? Step 1.2: Pattern Problems
-?       ??? README.md               # Pattern Tracker & Formula Cheatsheet
-?       ??? JAVA_PATTERNS_1_TO_18.md# Complete explanations & logic breakdown
-?       ??? Patterns_1_to_18.java   # Master Java Class for Patterns 1-18
-?       ??? Pattern01.java          # Individual Java Pattern 01
-?       ??? Pattern02.java          # Individual Java Pattern 02
-?       ??? ...                     # Individual Java Patterns 03 to 18
-?       ??? Pattern18.java          # Individual Java Pattern 18
-?
-??? 19-sep-26/                      # Earlier foundational practice files
-    ??? conditions.cpp
-    ??? conditions2.cpp
+├── 00-DSA-Roadmap-and-Mental-Models.md    # Master mathematical cheat sheet & mental models
+├── README.md                              # Main vault command center & Striver roadmap
+│
+├── 01-basics/
+│   └── 02-patterns/                       # Step 1.2: Pattern Mastery Directory
+│       ├── README.md                      # Dedicated patterns tracker & formulas
+│       ├── JAVA_PATTERNS_1_TO_18.md       # Detailed breakdown of patterns 1 to 18
+│       ├── Patterns_1_to_18.java          # Master monolithic runner class (1-18)
+│       ├── Pattern01.java                 # Standalone verified Java class (Pattern 01)
+│       ├── Pattern02.java                 # Standalone verified Java class (Pattern 02)
+│       ├── ...                            # Standalone verified Java classes (03 to 18)
+│       ├── Pattern19.java                 # Symmetric Void Pattern runner
+│       └── Pattern20.java                 # Symmetric Butterfly (Dual Approaches)
+│
+└── 19-sep-26/                             # Foundation setup & basic conditionals
+    ├── conditions.cpp
+    └── conditions2.cpp
 ```
 
 ---
 
-## ?? Setup & Compilation (Java)
+## 🛠️ Setup & Execution Guide
+
+All patterns are compiled with **Java 21 LTS** and contain built-in `main` test drivers:
 
 ```bash
-# Compile and run any pattern:
-javac 01-basics/02-patterns/Pattern01.java
-java -cp 01-basics/02-patterns Pattern01
+# Run any individual pattern directly (Java 11+ single-file execution):
+java 01-basics/02-patterns/Pattern20.java
 
-# Or run the master class:
-javac 01-basics/02-patterns/Patterns_1_to_18.java
-java -cp 01-basics/02-patterns Patterns_1_to_18
+# Or compile and run using standard javac:
+javac 01-basics/02-patterns/Pattern20.java
+java -cp 01-basics/02-patterns Pattern20
+
+# Run the master multi-pattern suite:
+java 01-basics/02-patterns/Patterns_1_to_18.java
 ```
 
 ---
 
-## ?? Resources & Links
-- **Striver's A2Z DSA Sheet**: [takeuforward.org](https://takeuforward.org/prep-hub/strivers-a2z-dsa-sheet)
-- **GitHub Repository**: [karnVen/DetaKozo](https://github.com/karnVen/DetaKozo)
-
----
-
-? *One pattern, one algorithm, one concept at a time.*
+<div align="center">
+  <b>DetaKozo (データ構造)</b> • Built with rigor by <a href="https://github.com/karnVen">karnVen</a> & <b>AI-bou</b><br>
+  <i>"Mastering Data Structures & Algorithms, one pattern and one concept at a time."</i>
+</div>
