@@ -7,7 +7,7 @@
 [![Obsidian Ready](https://img.shields.io/badge/Obsidian-Second_Brain_Ready-7C3AED?style=for-the-badge&logo=obsidian&logoColor=white)](https://obsidian.md)
 [![Language](https://img.shields.io/badge/Language-Java_21-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.oracle.com/java/)
 [![Curriculum](https://img.shields.io/badge/Curriculum-Striver's_A2Z_DSA-FF5722?style=for-the-badge&logo=codeforces&logoColor=white)](https://takeuforward.org/prep-hub/strivers-a2z-dsa-sheet)
-[![Progress](https://img.shields.io/badge/Patterns_Mastery-21%2F22_Completed-10B981?style=for-the-badge&logo=target&logoColor=white)](#-step-12-patterns-mastery-matrix)
+[![Progress](https://img.shields.io/badge/Patterns_Mastery-22%2F22_Completed_(100%25)-10B981?style=for-the-badge&logo=target&logoColor=white)](#-step-12-patterns-mastery-matrix)
 [![Method](https://img.shields.io/badge/Pedagogy-Alvar_Method-6366F1?style=for-the-badge)](#-the-ai-bou-engineering-philosophy)
 
 <p align="center">
@@ -131,7 +131,7 @@ Row (i)       Left Stars (j)          Spaces (s)          Right Stars (j)
 | **19** | [Symmetric Void Pattern](./01-basics/02-patterns/Pattern19.java) | Hard | ✅ Ready | [`Pattern19.java`](./01-basics/02-patterns/Pattern19.java) | Top: stars decrease, spaces grow. Bottom: inverted |
 | **20** | [Symmetric Butterfly Pattern](./01-basics/02-patterns/Pattern20.java) | Hard | ✅ Ready | [`Pattern20.java`](./01-basics/02-patterns/Pattern20.java) | **Dual Approaches**: Two halves + Single-loop symmetry |
 | **21** | [Hollow Rectangle Pattern](./01-basics/02-patterns/Pattern21.java) | Easy | ✅ Ready | [Pattern21.java](./01-basics/02-patterns/Pattern21.java) | Boundary condition: $i == 0 \lor i == N-1 \lor j == 0 \lor j == N-1$ |
-| **22** | Matrix Concentric Number Pattern | Hard | ⏳ Next Up | *Upcoming* | Distance to borders: $N - \min(top, bottom, left, right)$ |
+| **22** | [The Number Pattern (Concentric Matrix)](./01-basics/02-patterns/Pattern22.java) | Hard | ✅ Ready | [Pattern22.java](./01-basics/02-patterns/Pattern22.java) | Distance to borders: $N - \min(top, bottom, left, right)$ |
 
 ---
 
