@@ -5,7 +5,7 @@
 
 [![Language](https://img.shields.io/badge/Language-Java_21-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.oracle.com/java/)
 [![Curriculum](https://img.shields.io/badge/Curriculum-Striver's_A2Z_DSA-FF5722?style=for-the-badge&logo=codeforces&logoColor=white)](https://takeuforward.org/strivers-a2z-dsa-course/must-do-pattern-problems-solve-any-pattern-problems/)
-[![Progress](https://img.shields.io/badge/Progress-20%2F22_Solved_(91%25)-10B981?style=for-the-badge&logo=target&logoColor=white)](#-pattern-checklist-striver-a2z-sheet)
+[![Progress](https://img.shields.io/badge/Progress-21%2F22_Solved_(95%25)-10B981?style=for-the-badge&logo=target&logoColor=white)](#-pattern-checklist-striver-a2z-sheet)
 [![Obsidian Ready](https://img.shields.io/badge/Obsidian-Ready-7C3AED?style=for-the-badge&logo=obsidian&logoColor=white)](https://obsidian.md)
 
 <p align="center">
@@ -68,7 +68,7 @@ Whenever you approach ANY pattern problem, apply this deterministic 4-step frame
 | **18** | [Alpha-Triangle Pattern](https://takeuforward.org/strivers-a2z-dsa-course/must-do-pattern-problems-solve-any-pattern-problems/#pattern-18) | Medium | ✅ Ready | [`Pattern18.java`](./Pattern18.java) | Reverse alphabet starting from $(char)('A' + N - 1)$ |
 | **19** | [Symmetric Void Pattern](https://takeuforward.org/strivers-a2z-dsa-course/must-do-pattern-problems-solve-any-pattern-problems/#pattern-19) | Hard | ✅ Ready | [`Pattern19.java`](./Pattern19.java) | Upper: stars decrease, spaces grow. Lower: inverted |
 | **20** | [Symmetric Butterfly Pattern](https://takeuforward.org/strivers-a2z-dsa-course/must-do-pattern-problems-solve-any-pattern-problems/#pattern-20) | Hard | ✅ Ready | [`Pattern20.java`](./Pattern20.java) | **Dual Approaches**: Two halves + Single-loop symmetry |
-| **21** | [Hollow Rectangle Pattern](https://takeuforward.org/strivers-a2z-dsa-course/must-do-pattern-problems-solve-any-pattern-problems/#pattern-21) | Easy | ⏳ Next Up | *Upcoming* | Boundary: $i == 0 \lor i == N-1 \lor j == 0 \lor j == N-1$ |
+| **21** | [Hollow Rectangle Pattern](https://takeuforward.org/strivers-a2z-dsa-course/must-do-pattern-problems-solve-any-pattern-problems/#pattern-21) | Easy | ✅ Ready | [Pattern21.java](./Pattern21.java) | Boundary: $i == 0 \lor i == N-1 \lor j == 0 \lor j == N-1$ |
 | **22** | [The Number Pattern (Concentric Matrix)](https://takeuforward.org/strivers-a2z-dsa-course/must-do-pattern-problems-solve-any-pattern-problems/#pattern-22) | Hard | ⏳ Next Up | *Upcoming* | Border distance: $N - \min(top, bottom, left, right)$ |
 
 ---
