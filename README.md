@@ -18,7 +18,7 @@
 
 ---
 
-[⚡ Master Mental Models](./00-DSA-Roadmap-and-Mental-Models.md) • [📐 Patterns Matrix](./01-basics/02-patterns/README.md) • [⏱️ Time & Space Complexity](./01-basics/03-time-complexity/README.md) • [💻 Java Verification Suite](./01-basics/03-time-complexity/TimeComplexityDemo.java) • [📖 TakeUForward Sheet](https://takeuforward.org/prep-hub/strivers-a2z-dsa-sheet)
+[⚡ Master Mental Models](./00-DSA-Roadmap-and-Mental-Models.md) • [📐 Patterns Matrix](./01-basics/02-patterns/README.md) • [⏱️ Complexity](./01-basics/03-time-complexity/README.md) • [🗄️ Hashing & Maps](./01-basics/04-hashing/README.md) • [💻 Java Suite](./01-basics/04-hashing/BasicHashingDemo.java) • [📖 TakeUForward Sheet](https://takeuforward.org/prep-hub/strivers-a2z-dsa-sheet)
 
 ---
 
@@ -30,6 +30,7 @@
 | :--- | :--- |
 | 🎯 **Step 1.2 Patterns Solved** | **22 / 22 Completed (100%)** — All 22 patterns mastered with coordinate geometry |
 | ⏱️ **Step 1.3 Complexity Analysis** | **Complete (100%)** — Big-O, 3 Golden Rules, $10^8$ OJ Benchmark & Space bounds |
+| 🗄️ **Step 1.4 Hashing & Maps** | **Complete (100%)** — Pre-storing, Fetching, ASCII 256, HashMap, Division Rule & Collisions |
 | 💻 **Language & Environment** | **Java 21 LTS** — Standalone classes with built-in `main` test runners |
 | 📐 **Visual Blueprints & Diagrams** | **Boxed ASCII coordinate geometry & mathematical invariant derivations** |
 | 🧠 **Learning Pedagogy** | **The Alvar Method** (Probe → Plan → Teach → Lock-in) |
@@ -78,7 +79,7 @@ Row (i)       Left Stars (j)          Spaces (s)          Right Stars (j)
 - [x] **1.1 Things to Know in Programming** (I/O, Conditionals, Data Types, Switch)
 - [x] **[1.2 Build-up Logical Thinking (Patterns 01 to 22)](./01-basics/02-patterns/README.md)** — *(22/22 Complete, 100% Mastered)*
 - [x] **[1.3 Time & Space Complexity Mastery](./01-basics/03-time-complexity/README.md)** — *(Big-O, 3 Golden Rules, Space Bounds, 10^8 Operations Rule)*
-- [ ] **1.4 Java Collections Framework / STL Basics**
+- [x] **[1.4 Basic Hashing & Maps Mastery](./01-basics/04-hashing/README.md)** — *(Pre-storing, Fetching, Char Hashing, HashMap vs TreeMap, Division Rule)*
 - [ ] **1.5 Basic Maths** (Count Digits, Reverse Number, Palindrome, GCD/HCF, Armstrong, All Divisors, Prime Check)
 - [ ] **1.5 Basic Recursion** (1 to N, Backtracking, Functional Recursion, Fibonacci)
 - [ ] **1.6 Basic Hashing** (Frequency arrays, HashMap, High/Low Frequency elements)

@@ -9,33 +9,27 @@
 ## 🚀 Today's Achievements & Work Log
 
 1. **Step 1.2: Pattern Problems (22 / 22 Completed - 100% Mastery)**:
-   - ✅ **Patterns 01 to 18**: Generated as standalone Java files (`Pattern01.java` through `Pattern18.java`) and verified with JDK 21.
-   - ✅ **Master Java File**: `Patterns_1_to_18.java` with interactive execution.
-   - ✅ **Markdown Guide**: `JAVA_PATTERNS_1_TO_18.md` with visual targets, formulas, and complexity breakdowns.
-   - ✅ **Pattern 19 (Symmetric Void)**: Completed and verified in `Pattern19.java`.
-   - ✅ **Pattern 20 (Symmetric Butterfly)**: Completed and verified in `Pattern20.java`.
-   - ✅ **Pattern 21 (Hollow Rectangle)**: Completed and verified in `Pattern21.java`.
-   - ✅ **Pattern 22 (Concentric Number Matrix)**: Completed and verified in `Pattern22.java`.
+   - ✅ Patterns 01 to 22 implemented, verified, and mapped to coordinate geometry models in `01-basics/02-patterns/`.
 
 2. **Step 1.3: Time & Space Complexity (Mastery Completed)**:
-   - 📺 **Material Source**: Deep dive into Striver's TakeUForward tutorial: `https://www.youtube.com/watch?v=FPu9Uld7W-E`.
-   - 📁 **Dedicated Vault Created**: `01-basics/03-time-complexity/`.
-   - 📝 **Master Notes**: `01-basics/03-time-complexity/README.md` covering:
-     - The Fallacy of Seconds (why execution time varies across hardware).
-     - The Slope Comparison mental model (Rate of growth with respect to input $N$).
-     - The Asymptotic Trinity: Big-O (Worst-case/Upper bound), Big-Omega (Best-case/Lower bound), Big-Theta (Average-case/Tight bound).
-     - Striver's 3 Golden Rules (Always worst case, drop constants, drop lower-order terms).
-     - Proof of Asymptotic Dominance ($4N^3 + 3N^2 + 8 	o \mathcal{O}(N^3)$).
-     - Step-by-step loop operations and mathematical derivations:
-       - Single linear scan: $\mathcal{O}(N)$
-       - Independent sequential loops: $\mathcal{O}(N + M)$
-       - Nested independent loops: $\mathcal{O}(N^2)$
-       - Dependent triangular loops ($\sum_{k=1}^N k = rac{N(N+1)}{2} 	o \mathcal{O}(N^2)$)
-       - Geometric/logarithmic stepping loops ($i *= 2 	o \mathcal{O}(\log N)$)
-     - Space Complexity: Input Space vs. Auxiliary Space.
-     - Striver's Senior Engineering Warning on in-place input mutation.
-     - The Online Judge $10^8$ operations rule & constraint-to-complexity decryption matrix.
-   - 💻 **Java 21 Verification Suite**: `TimeComplexityDemo.java` compiled and verified with JDK 21.
+   - 📺 **Material Source**: Striver's TakeUForward tutorial (`https://www.youtube.com/watch?v=FPu9Uld7W-E`).
+   - 📁 **Vault**: `01-basics/03-time-complexity/`.
+   - 📝 **Master Notes**: Asymptotic bounds ($O, \Omega, \Theta$), 3 Golden Rules, proof of dominance, triangular loop invariant ($\sum_{k=1}^N k = rac{N(N+1)}{2} 	o O(N^2)$), Space complexity (Input vs Auxiliary), and $10^8$ Online Judge operations benchmark.
+   - 💻 **Java 21 Suite**: Verified in `TimeComplexityDemo.java`.
+
+3. **Step 1.4: Basic Hashing & Maps (Mastery Completed)**:
+   - 📺 **Material Source**: Striver's TakeUForward Hashing tutorial (`https://www.youtube.com/watch?v=KEs5UyBJ39g`).
+   - 📁 **Vault Created**: `01-basics/04-hashing/`.
+   - 📝 **Master Notes**: `01-basics/04-hashing/README.md` covering:
+     - The Brute Force disaster: $\mathcal{O}(Q 	imes N) \implies 10^{10} > 10^8 \implies$ TLE.
+     - The Two Pillars of Hashing: **Pre-storing** ($\mathcal{O}(N)$) and **Fetching** ($\mathcal{O}(1)$). Total: $\mathcal{O}(N + Q)$.
+     - Technique 1: Number Hashing using Frequency Array (Local Stack $pprox 10^6$ vs Heap $pprox 10^7$ limits).
+     - Technique 2: Character Hashing (Lowercase 26-bucket `s.charAt(i) - 'a'` & All-ASCII 256-bucket mapping).
+     - Technique 3: Hashing with `HashMap` (Unordered, $\mathcal{O}(1)$ avg) vs `TreeMap` (Red-Black Tree, $\mathcal{O}(\log N)$, sorted keys).
+     - Technique 4: Division Rule of Hashing ($	ext{hash}(k) = k \pmod m$, prime table size) & Collision Resolution (Separate Chaining).
+     - Why worst-case $\mathcal{O}(N)$ occurs (bucket degeneration) and Java 8 Treeification defense.
+     - Homework problem solved: Highest & Lowest frequency elements in array.
+   - 💻 **Java 21 Verification Suite**: `BasicHashingDemo.java` compiled and verified with JDK 21.
 
 ---
 
@@ -43,13 +37,16 @@
 
 When starting the next session, jump directly to:
 
-### 📦 **Step 1.4: Standard Libraries & Collections (Java Collections Framework / STL)**
+### 🔢 **Step 1.5: Basic Maths for DSA**
 - **Topics to Cover**:
-  1. `List` implementations: `ArrayList`, `LinkedList`, `Vector`
-  2. `Queue` & `Stack` interfaces: `ArrayDeque`, `LinkedList`, `PriorityQueue` (Min-Heap / Max-Heap)
-  3. `Set` interfaces: `HashSet`, `LinkedHashSet`, `TreeSet` (Red-Black Tree $\mathcal{O}(\log N)$)
-  4. `Map` interfaces: `HashMap` ($\mathcal{O}(1)$ avg), `LinkedHashMap`, `TreeMap` ($\mathcal{O}(\log N)$)
-  5. Time & Space complexity trade-offs for each collection operation (`add`, `get`, `remove`, `contains`).
+  1. Extraction of Digits (`n % 10`, `n / 10`)
+  2. Count Digits in a Number ($\mathcal{O}(\log_{10} N)$)
+  3. Reverse a Number (handling integer overflow bounds)
+  4. Check Palindrome Number without string conversion
+  5. Armstrong Numbers (sum of digits raised to power of digit count)
+  6. Print all Divisors (Optimized up to $\mathcal{O}(\sqrt{N})$)
+  7. Check for Prime (Trial division up to $\mathcal{O}(\sqrt{N})$)
+  8. Greatest Common Divisor (GCD / HCF) via Euclidean Algorithm ($\mathcal{O}(\log(\min(a, b)))$)
 
 ---
 
