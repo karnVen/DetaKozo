@@ -16,32 +16,23 @@
  */
 public class Pattern22 {
 
-    /**
-     * Prints concentric square number matrix of size (2*n - 1) x (2*n - 1).
-     * 
-     * Formula:
-     * Value at (i, j) = n - min(distance to top, bottom, left, right)
-     */
     public static void pattern22(int n) {
-        int totalSize = 2 * n - 1;
-
-        // Outer loop for rows
-        for (int i = 0; i < totalSize; i++) {
-            // Inner loop for columns
-            for (int j = 0; j < totalSize; j++) {
-                // Distance to each of the 4 outer borders
-                int top = i;
-                int left = j;
-                int right = (2 * n - 2) - j;
-                int down = (2 * n - 2) - i;
-
-                // Minimum distance from any edge defines which concentric ring (i, j) belongs to
-                int minDist = Math.min(Math.min(top, down), Math.min(left, right));
-
-                // Layer value is n - minDist
-                System.out.print((n - minDist) + " ");
+        // TODO: Step 1 - Calculate total grid size (how many rows & cols for N?)
+        // TODO: Step 2 - Outer loop for rows i from 0 to totalSize - 1
+        // TODO: Step 3 - Inner loop for cols j from 0 to totalSize - 1
+        // TODO: Step 4 - Calculate distances from 4 edges (top, bottom, left, right)
+        // TODO: Step 5 - Find minimum distance and compute value to print: n - minDistance + " "
+        // TODO: Step 6 - Newline after each row
+                for (int i = 0 ; i < n*2; i ++){
+        for ( int j =0 ; j < n*2 ; j++ ){
+              if ( i ==0 || i ==n*2-1 ||j ==0 || j ==n*2-1  ){
+                System.out.print(n);
+            }else {
+                System.out.print(" ");
             }
-            System.out.println();
+        }
+
+        System.out.println();
         }
     }
 
