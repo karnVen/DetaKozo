@@ -162,26 +162,35 @@ public class NumberHashing {
 
 ---
 
-### Memory Constraints: Local Stack vs Global Heap Limits
+### ⚠️ CRITICAL NOTE: Maximum Array Size in `main()` vs Globally
 
-Striver explains a vital system-level distinction regarding how large an array can be declared:
-
-```
-┌─────────────────────────────────┬───────────────────────────────┬─────────────────────────────┐
-│ Array Location                  │ Maximum Allowed Size (C++)    │ Java 21 Equivalent          │
-├─────────────────────────────────┼───────────────────────────────┼─────────────────────────────┤
-│ Inside a Function (Stack Memory)│ ~ 10^6 elements (10^6 int)    │ ~ 10^6 (Avoid StackOverflow)│
-│ Globally / Heap Memory          │ ~ 10^7 elements (10^7 int)    │ ~ 10^7 (JVM Heap Allocated) │
-└─────────────────────────────────┴───────────────────────────────┴─────────────────────────────┘
-```
-
-> [!WARNING]
-> In Java, **all arrays are allocated on the Heap** via the `new` keyword. However, memory limits still strictly apply:
-> * An `int[10^7]` array consumes $10^7 \times 4 \text{ bytes} \approx 40 \text{ MB}$, which easily fits inside JVM's default heap ($256\text{ MB} - 4\text{ GB}$).
-> * An `int[10^8]` array consumes $\approx 400 \text{ MB}$.
-> * An `int[10^9]` array requires $\approx 4 \text{ GB}$ of contiguous memory $\implies$ **Throws `java.lang.OutOfMemoryError`!**
-> 
-> **Rule of Thumb**: You **cannot** use array hashing if input values exceed $\approx 10^7$.
+> [!IMPORTANT]
+> ### 🛑 Striver's Golden Rule on Array Declaration Limits (Stack vs Data Segment)
+> During competitive programming and technical interviews, where and how you declare your frequency array is strictly governed by physical RAM limits:
+>
+> | Declaration Scope / Memory Segment | Maximum Integer Array (`int`) | Maximum Boolean Array (`bool`) |
+> | :--- | :--- | :--- |
+> | **INSIDE `main()`** *(Call Stack Memory)* | **$\approx 10^6$** (1 Million `int`s) | **$\approx 10^7$** (10 Million `bool`s) |
+> | **GLOBALLY** *(Data / BSS Segment)* | **$\approx 10^7$** (10 Million `int`s) | **$\approx 10^8$** (100 Million `bool`s) |
+>
+> #### 🧠 Why Does This Limitation Exist? (First-Principles Explanation)
+> 1. **Inside `main()` (The Stack Limit)**:
+>    - Functions run on the CPU **Call Stack**.
+>    - Operating Systems strictly cap the stack size (typically **1 MB to 8 MB**).
+>    - $10^6$ integers $\times 4\text{ bytes} \approx 4\text{ MB}$ (fits just inside the 8MB stack).
+>    - If you declare `int arr[10^7]` inside `main()`, it requires $\approx 40\text{ MB} \gg 8\text{ MB}$, triggering an immediate **Segmentation Fault (SIGSEGV) / Stack Overflow** crash!
+> 2. **Globally (Data Segment / Heap)**:
+>    - Global variables do NOT live on the stack; they live in the **Data Segment / BSS segment** backed by system RAM.
+>    - You can safely declare `int arr[10^7]` (which takes $\approx 40\text{ MB}$) globally.
+>
+> #### ☕ What About Java? (How JVM Handles This)
+> In Java, array elements are **always allocated on the JVM Heap** via `new int[...]` (only the 8-byte reference sits on the stack). However, Online Judge Memory Limits (typically **256 MB or 512 MB**) still apply:
+> - `new int[10^6]` $\approx 4\text{ MB}$ ✅ (Completely safe)
+> - `new int[10^7]` $\approx 40\text{ MB}$ ✅ (Fits in JVM Heap)
+> - `new int[10^8]` $\approx 400\text{ MB}$ ⚠️ (Exceeds 256MB limit $\to$ `OutOfMemoryError`)
+> - `new int[10^9]` $\approx 4\text{ GB}$ ❌ (**Guaranteed Crash** with `java.lang.OutOfMemoryError`!)
+>
+> 👉 **THE CORE TAKEAWAY**: When elements exceed $10^7$ or are negative, **array hashing becomes impossible**. That is the exact mathematical reason why **`HashMap` was invented**!
 
 ---
 
